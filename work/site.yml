@@ -1,0 +1,5 @@
+---
+  - hosts: test-target
+    become: yes
+    roles:
+      - goss

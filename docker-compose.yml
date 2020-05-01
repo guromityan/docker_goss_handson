@@ -1,0 +1,12 @@
+---
+  version: "2"
+  services:
+    ansible-server:
+      build: ./ansible-server
+      volumes:
+        - ./work:/root/work
+
+    test-target:
+      build: ./test-target
+      ports:
+        - 8080:80

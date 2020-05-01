@@ -1,0 +1,21 @@
+file:
+  /root/test.txt:
+    exists: true
+    contains: ["this is test."]
+
+port:
+  tcp:80:
+    listening: true
+    ip:
+    - 0.0.0.0
+  tcp6:80:
+    listening: true
+    ip:
+    - '::'
+service:
+  nginx:
+    enabled: true
+    running: false
+process:
+  nginx:
+    running: true

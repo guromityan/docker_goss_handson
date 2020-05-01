@@ -1,0 +1,5 @@
+Host test-target
+    HostName test-target
+    User root
+    IdentityFile /root/.ssh/test-target-key
+
